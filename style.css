@@ -1649,7 +1649,7 @@ tbody tr:nth-child(even) {
       rgba(15, 42, 79, 0.85),
       rgba(15, 42, 79, 0.75)
     ),
-    url("/img/cta-fauna-bg.jpg");
+    url("img/cta-fauna-bg.jpg");
 
   background-size: cover;
   background-position: center;
