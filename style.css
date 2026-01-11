@@ -8,6 +8,7 @@
 /* ================= VARIABLES ================= */
 :root {
   --azul: #0f2a4f;
+  --azul-oscuro: #003366;
   --naranja: #ff8a00;
   --verde: #4caf50;
   --blanco: #ffffff;
@@ -98,6 +99,17 @@ body {
 .nav-logo img {
   height: 50px;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+}
+
+ul > li:last-child > a {
+    background-color: var(--azul-oscuro);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--naranja);
+}
+
+ul > li:nth-last-child(2) > a {
+    color: var(--naranja);
 }
 
 /* ================= HERO ================= */
@@ -1681,7 +1693,7 @@ tbody tr:nth-child(even) {
 
 .cta-map {
   background: #fff;
-  border-radius: 24px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 30px 70px rgba(0,0,0,0.35);
   height: 750px;
@@ -1911,7 +1923,7 @@ tbody tr:nth-child(even) {
 /* ================= FOOTER INVÍAS ================= */
 
 .footer-invias {
-  background: var(--naranja);
+  background: var(--azul-oscuro);
   color: #ffffff;
   padding: 4rem 0 2rem;
   font-size: 0.85rem;
