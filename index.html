@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing INVÍAS</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="header">
+  <nav class="nav">
+    <div class="nav-container">
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- LOGO -->
+      <div class="nav-logo">
+        <img src="/img/logoinvias.png" alt="INVÍAS">
+      </div>
+
+      <!-- MENU DESKTOP -->
+      <ul class="nav-group desktop-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#seccion-fauna">Impacto</a></li>
+        <li><a href="#seccion-roadmap">Roadmap</a></li>
+        <li><a href="#section-aliados">Aliados</a></li>
+        <li><a href="#section-cta">App</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu">
+
+  <button class="mobile-close" aria-label="Cerrar menú">✕</button>
+
+  <div class="mobile-logo">
+    <img src="/img/logoinvias.png" alt="INVÍAS">
+  </div>
+
+  <nav class="mobile-nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#seccion-fauna">Impacto</a>
+    <a href="#seccion-roadmap">Roadmap</a>
+    <a href="#section-aliados">Aliados</a>
+    <a href="#seccion-cta">App</a>
+  </nav>
+
+  </div>
+
+</header>
+
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- ================= HERO / CARRUSEL ================= -->
+    <section id="hero" class="carousel-section">
+
+      <!-- Overlay -->
+      <div class="carousel-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Versión 2025</span>
+        <h1>Mapa de Vulnerabilidad<br>Faunística de Colombia</h1>
+        <p>
+          Análisis espacial avanzado para la identificación de
+          tramos viales con riesgo faunístico prioritario.
+        </p>
+      </div>
+
+
+      <!-- Carrusel -->
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+        data-bs-pause="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="/img/ave.jpg" alt="Fauna silvestre">
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/peresozo.jpg" alt="Perezoso">
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/monos.jpg" alt="Monos">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Flecha de bajada -->
+      <a href="#seccion-proyecto" class="scroll-arrow hero-arrow" aria-label="Bajar">
+        ↓
+      </a>
+
+    </section>
+
+
+    <!-- ================= SECCIÓN PROYECTO ================= -->
+    <section id="seccion-proyecto" class="section-project">
+
+      <div class="project-slider">
+
+        <!-- Flechas laterales -->
+        <button class="project-nav left" onclick="prevProjectSlide()">‹</button>
+        <button class="project-nav right" onclick="nextProjectSlide()">›</button>
+
+        <!-- ================= SLIDE 1 ================= -->
+        <div class="project-slide active">
+
+          <div class="project-container">
+
+            <div class="project-text">
+              <h2>Mapa de Vulnerabilidad Faunística</h2>
+
+              <p class="intro">
+                Instrumento técnico para la identificación de tramos viales con mayor
+                incidencia de atropellamientos de fauna silvestre en Colombia.
+              </p>
+
+              <p>
+                A partir de análisis geoespaciales avanzados, registros históricos y
+                modelación ambiental, se determinan patrones de riesgo que permiten
+                priorizar acciones de mitigación.
+              </p>
+
+              <p>
+                Esta herramienta apoya la toma de decisiones en proyectos de
+                infraestructura vial, promoviendo una planificación responsable,
+                sostenible y alineada con la conservación de la biodiversidad.
+              </p>
+
+
+              <div class="benefits">
+                <div class="benefit-item">🌿 Reducción de mortalidad</div>
+                <div class="benefit-item">🛣️ Tramos críticos</div>
+                <div class="benefit-item">📊 Soporte técnico</div>
+                <div class="benefit-item">🌎 Conectividad ecológica</div>
+              </div>
+            </div>
+
+            <div class="project-image">
+              <img src="/img/mapa.jpg" alt="Mapa de vulnerabilidad">
+
+              <div class="map-stats">
+                <h3>Muertes estimadas por año</h3>
+
+                <div class="stats">
+                  <div class="stat">
+                    <span class="number">120.000</span>
+                    <span class="label">Mamíferos</span>
+                  </div>
+
+                  <div class="stat accent">
+                    <span class="number">90.000</span>
+                    <span class="label">Aves</span>
+                  </div>
+
+                  <div class="stat">
+                    <span class="number">60.000</span>
+                    <span class="label">Reptiles</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= SLIDE 2 ================= -->
+        <div class="project-slide">
+
+          <div class="project-carousel-wrapper">
+            <h2 class="carousel-title">Mapas por regiones</h2>
+
+            <div class="region-carousel">
+
+              <img src="/img/mapa_vulnerabilidad/Imagen.png" class="region-img active">
+              <img src="/img/mapa_vulnerabilidad/Imagen0.png" class="region-img">
+              <img src="/img/mapa_vulnerabilidad/Imagen1.png" class="region-img">
+              <img src="/img/mapa_vulnerabilidad/Imagen2.png" class="region-img">
+              <img src="/img/mapa_vulnerabilidad/Imagen3.png" class="region-img">
+              <img src="/img/mapa_vulnerabilidad/Imagen4.png" class="region-img">
+              <img src="/img/mapa_vulnerabilidad/Imagen5.png" class="region-img">
+
+            </div>
+
+            <!-- Puntos -->
+            <div class="region-dots">
+              <span onclick="goRegion(0)" class="dot active"></span>
+              <span onclick="goRegion(1)" class="dot"></span>
+              <span onclick="goRegion(2)" class="dot"></span>
+              <span onclick="goRegion(3)" class="dot"></span>
+              <span onclick="goRegion(4)" class="dot"></span>
+              <span onclick="goRegion(5)" class="dot"></span>
+              <span onclick="goRegion(6)" class="dot"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Flechas verticales -->
+      <div class="section-arrows">
+        <a href="#hero" class="scroll-arrow small-arrow">↑</a>
+        <a href="#seccion-video" class="scroll-arrow small-arrow">↓</a>
+      </div>
+
+    </section>
+
+    <!-- ================= SECCIÓN VIDEO PITCH ================= -->
+    <section id="seccion-video" class="section-pitch">
+
+      <div class="video-container">
+
+        <div class="video-card">
+          <video src="/video/pitch.mp4" controls preload="metadata" poster="/img/video-poster.jpg">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+
+      </div>
+
+      <div class="section-arrows">
+        <a href="#seccion-proyecto" class="scroll-arrow small-arrow" aria-label="Subir">↑</a>
+        <a href="#seccion-fauna" class="scroll-arrow small-arrow" aria-label="Bajar">↓</a>
+      </div>
+
+    </section>
+
+    <!-- ================= SECCIÓN FAUNA ================= -->
+    <section id="seccion-fauna" class="section-fauna">
+
+      <!-- ===== SLIDER FAUNA ===== -->
+      <div class="fauna-slider">
+
+        <!-- ===== FLECHAS LATERALES ===== -->
+        <button class="fauna-nav left" onclick="prevFaunaSlide()">‹</button>
+        <button class="fauna-nav right" onclick="nextFaunaSlide()">›</button>
+
+        <!-- ================= SLIDE 1 ================= -->
+        <div class="fauna-slide active">
+
+          <div class="fauna-container">
+
+            <!-- IZQUIERDA -->
+            <div class="fauna-left">
+              <header class="fauna-header">
+                <h2>Accidentalidad de Fauna Silvestre</h2>
+
+                <p>
+                  La red vial del país genera impactos significativos sobre diferentes
+                  grupos de fauna silvestre. El análisis de estos eventos permite
+                  identificar patrones espaciales y especies vulnerables.
+                </p>
+
+                <p>
+                  Al interactuar con cada tarjeta se visualizan estadísticas específicas
+                  de atropellamiento.
+                </p>
+              </header>
+
+              <!-- CARDS -->
+              <div class="fauna-cards">
+                <article class="animal-card">
+                  <img src="/img/oso-anteojos.jpg">
+                  <div class="animal-overlay">
+                    <h3>Mamíferos</h3>
+                    <span>120.000 muertes / año</span>
+                  </div>
+                </article>
+
+                <article class="animal-card">
+                  <img src="/img/guacamaya.jpg">
+                  <div class="animal-overlay">
+                    <h3>Aves</h3>
+                    <span>90.000 muertes / año</span>
+                  </div>
+                </article>
+
+                <article class="animal-card">
+                  <img src="/img/iguana.jpg">
+                  <div class="animal-overlay">
+                    <h3>Reptiles</h3>
+                    <span>60.000 muertes / año</span>
+                  </div>
+                </article>
+
+                <article class="animal-card">
+                  <img src="/img/rana.jpg">
+                  <div class="animal-overlay">
+                    <h3>Anfibios</h3>
+                    <span>45.000 muertes / año</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- DERECHA -->
+            <div class="fauna-right">
+              <div class="stat-card">
+                <h3>Muertes anuales por grupo</h3>
+                <canvas id="faunaBarChart"></canvas>
+              </div>
+
+              <div class="stat-card large">
+                <h3>Impacto total por grupo</h3>
+                <canvas id="faunaPieChart"></canvas>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= SLIDE 2 ================= -->
+        <div class="fauna-slide">
+
+          <div class="fauna-tables">
+
+            <header class="tables-header">
+              <h2>Capas y Variables del Modelo</h2>
+              <p>
+                Descripción técnica de las capas utilizadas para la construcción
+                del mapa de vulnerabilidad faunística.
+              </p>
+            </header>
+
+            <!-- TABLA 1 -->
+            <div class="table-card">
+              <h3>Variables ambientales y de cobertura</h3>
+
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Característica</th>
+                      <th>Descripción</th>
+                      <th>Procedencia</th>
+                      <th>Actualización</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>16</td>
+                      <td>dist_gain</td>
+                      <td>Distancia desde áreas de ganancia de cobertura</td>
+                      <td>Global Forest Change (2000–2024)</td>
+                      <td>Actualizada</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>dist_loss</td>
+                      <td>Distancia desde áreas de pérdida de cobertura</td>
+                      <td>Global Forest Change (2000–2024)</td>
+                      <td>Actualizada</td>
+                    </tr>
+                    <tr>
+                      <td>18–28</td>
+                      <td>Índices espectrales</td>
+                      <td>AVI, BSI, EVI, GCI, GNDVI, MSI, NDMI, NDVI, SAVI</td>
+                      <td>Sentinel-2 (365 días)</td>
+                      <td>Dic 2025</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- TABLA 2 -->
+            <div class="table-card">
+              <h3>Capas espaciales base</h3>
+
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Característica</th>
+                      <th>Descripción</th>
+                      <th>Procedencia</th>
+                      <th>Actualización</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01–11</td>
+                      <td>Bandas Sentinel-2</td>
+                      <td>Información multiespectral</td>
+                      <td>ESA / GEE</td>
+                      <td>Dic 2025</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>dist_vias</td>
+                      <td>Distancia a vías</td>
+                      <td>OpenStreetMap</td>
+                      <td>Nueva</td>
+                    </tr>
+                    <tr>
+                      <td>29</td>
+                      <td>DEM</td>
+                      <td>Elevación digital</td>
+                      <td>NASA SRTM</td>
+                      <td>No actualizada</td>
+                    </tr>
+                    <tr>
+                      <td>30</td>
+                      <td>Pendiente</td>
+                      <td>Pendiente en porcentaje</td>
+                      <td>DEM</td>
+                      <td>No actualizada</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Flechas subir / bajar -->
+      <div class="section-arrows fauna-arrows">
+        <a href="#seccion-video" class="scroll-arrow small-arrow">↑</a>
+        <a href="#seccion-roadmap" class="scroll-arrow small-arrow">↓</a>
+      </div>
+
+    </section>
+
+    <!-- ================= SECCIÓN ROADMAP ================= -->
+    <section id="seccion-roadmap" class="section-roadmap">
+
+      <!-- Flechas laterales del slider -->
+      <button class="roadmap-nav prev" aria-label="Anterior">‹</button>
+      <button class="roadmap-nav next" aria-label="Siguiente">›</button>
+
+      <div class="roadmap-slider">
+
+        <!-- ================= SLIDE 1 : PIPELINE ================= -->
+        <div class="roadmap-slide active">
+
+          <header class="roadmap-header">
+            <h2>Pipeline de Procesamiento del Mapa</h2>
+            <p>
+              Flujo completo de procesamiento y análisis espacial para la generación
+              del mapa de vulnerabilidad faunística.
+            </p>
+          </header>
+
+          <div class="pipeline-grid">
+
+            <!-- 01 -->
+            <div class="pipeline-block">
+              <span class="block-number">01</span>
+              <h3>Pipeline GEE</h3>
+              <div class="block-flow">
+                <span class="box" data-tooltip="Datos de entrada geoespaciales.">Insumos</span>
+                <span class="arrow">→</span>
+                <span class="box" data-tooltip="Descarga automática de capas.">Descarga</span>
+                <span class="arrow">→</span>
+                <span class="box" data-tooltip="Unificación de imágenes raster.">Mosaico</span>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="pipeline-block">
+              <span class="block-number">02</span>
+              <h3>Procesos Paralelos</h3>
+              <div class="block-flow">
+                <span class="box yellow" data-tooltip="Fuentes externas vía API.">API Fuentes</span>
+                <span class="arrow">→</span>
+                <span class="box yellow" data-tooltip="Cálculo de distancias espaciales.">Distancias</span>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="pipeline-block">
+              <span class="block-number">03</span>
+              <h3>Pipeline Principal</h3>
+              <div class="block-flow">
+                <span class="box pink" data-tooltip="Normalización espacial.">Alineación</span>
+                <span class="arrow">→</span>
+                <span class="box pink" data-tooltip="Recorte del área de estudio.">Clip</span>
+                <span class="arrow">→</span>
+                <span class="box pink" data-tooltip="Modelo de distribución de especies.">MAXENT</span>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="pipeline-block">
+              <span class="block-number">04</span>
+              <h3>Datos y Análisis</h3>
+              <div class="block-flow">
+                <span class="box gray" data-tooltip="Red vial nacional.">Vías (SHP)</span>
+                <span class="arrow">→</span>
+                <span class="box yellow" data-tooltip="Zonas críticas de eventos.">Hotspots</span>
+                <span class="arrow">→</span>
+                <span class="box yellow" data-tooltip="Análisis espacial de patrones.">K-Ripley</span>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="pipeline-block full">
+              <span class="block-number">05</span>
+              <h3>Postproceso</h3>
+              <div class="block-flow">
+                <span class="box purple" data-tooltip="Clasificación por niveles.">Cálculo niveles</span>
+                <span class="arrow">→</span>
+                <span class="box purple" data-tooltip="Generalización geométrica.">Dividir / Disolver</span>
+                <span class="arrow">→</span>
+                <span class="box purple" data-tooltip="Producto final.">Empaquetar</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= SLIDE 2 : MODELO ESPACIAL ================= -->
+        <div class="roadmap-slide">
+
+          <header class="roadmap-header">
+            <h2>Modelo Espacial de Vulnerabilidad</h2>
+            <p>
+              Transformación progresiva de probabilidades ambientales en tramos
+              viales priorizados por riesgo faunístico.
+            </p>
+          </header>
+
+          <div class="spatial-model">
+
+            <!-- FILA 1 -->
+            <div class="spatial-row">
+              <div class="model-card">
+                <span class="model-tag">RÁSTER</span>
+                <h3>MaxEnt</h3>
+                <p>
+                  Capa ráster de probabilidad ambiental generada mediante el modelo de
+                  máxima entropía.
+                </p>
+              </div>
+
+              <div class="model-card">
+                <span class="model-tag">PROCESO</span>
+                <h3>Reclasificación</h3>
+                <p>
+                  Conversión del ráster continuo en rangos discretos de probabilidad para
+                  análisis espacial.
+                </p>
+              </div>
+
+              <div class="model-card">
+                <span class="model-tag">VECTOR</span>
+                <h3>Vectorización</h3>
+                <p>
+                  Transformación del ráster reclasificado a polígonos de probabilidad.
+                </p>
+              </div>
+            </div>
+
+            <!-- FILA 2 -->
+            <div class="spatial-row center">
+              <div class="model-card">
+                <span class="model-tag">ANÁLISIS</span>
+                <h3>Superposición</h3>
+                <p>
+                  Intersección con la red vial para identificar segmentos críticos de
+                  riesgo faunístico.
+                </p>
+              </div>
+
+              <div class="model-card">
+                <span class="model-tag">POSTPROCESO</span>
+                <h3>Disolver</h3>
+                <p>
+                  Unificación de segmentos viales con igual nivel de riesgo para la
+                  entrega final del producto.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Flechas verticales -->
+      <div class="section-arrows">
+        <a href="#seccion-fauna" class="scroll-arrow small-arrow">↑</a>
+        <a href="#section-cta" class="scroll-arrow small-arrow">↓</a>
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA FINAL ================= -->
+    <section id="section-cta" class="section-cta">
+
+      <div class="cta-overlay"></div>
+
+      <div class="cta-container">
+
+        <!-- MAPA -->
+        <div class="cta-map">
+          <iframe src="https://hermes.invias.gov.co/VulnerabilidadFaunistica/" loading="lazy" allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- TEXTO -->
+        <div class="cta-content">
+          <h2>Explora el Mapa de Vulnerabilidad Faunística</h2>
+
+          <p>
+            Accede a la plataforma oficial de INVÍAS para visualizar
+            zonas críticas de accidentalidad de fauna silvestre,
+            identificar patrones espaciales y apoyar la toma de decisiones
+            en proyectos viales.
+          </p>
+
+          <a href="https://hermes.invias.gov.co/VulnerabilidadFaunistica/" target="_blank" class="cta-button">
+            Ir a la aplicación
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= SECCIÓN ALIADOS ================= -->
+    <section id="section-aliados" class="section-aliados">
+
+      <div class="aliados-container">
+
+        <header class="aliados-header">
+          <span class="section-eyebrow">ALIADOS</span>
+          <h2>Instituciones que apoyan el proyecto</h2>
+          <p>
+            Este proyecto es posible gracias al trabajo conjunto entre entidades
+            públicas y ambientales comprometidas con la conservación
+            de la biodiversidad y la planificación vial sostenible.
+          </p>
+        </header>
+
+        <!-- Carrusel -->
+        <div class="aliados-carousel">
+
+          <button class="aliados-btn prev">‹</button>
+
+          <div class="aliados-track">
+            <div class="aliado-card"><img src="/img/logoinvias.png" alt="INVÍAS"></div>
+            <div class="aliado-card"><img src="/img/logo-recosfa.png" alt="MinAmbiente"></div>
+            <div class="aliado-card"><img src="/img/logoinvias.png" alt="INVÍAS"></div>
+            <div class="aliado-card"><img src="/img/logo-recosfa.png" alt="MinAmbiente"></div>
+            <div class="aliado-card"><img src="/img/logoinvias.png" alt="INVÍAS"></div>
+            <div class="aliado-card"><img src="/img/logo-recosfa.png" alt="MinAmbiente"></div>
+          </div>
+
+          <button class="aliados-btn next">›</button>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-invias">
+
+    <div class="footer-container">
+      <!-- COLUMNAS -->
+      <div class="footer-columns">
+
+        <div class="footer-col">
+          <h4>Instituto Nacional de Vías - INVÍAS</h4>
+          <p><strong>Sede Principal</strong></p>
+          <p>Calle 25G # 73B - 90</p>
+          <p>Complejo Empresarial Central Point</p>
+          <p>Bogotá D.C. - Colombia</p>
+          <p><strong>Código Postal</strong> 110931</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Conmutador</h4>
+          <p>(+57) 601 377 0600</p>
+
+          <h4>Línea gratuita</h4>
+          <p>(+57) 01 8000 117844</p>
+
+          <h4>Denuncias de Actos de Corrupción</h4>
+          <p>(+57) 601 377 0600<br>Opción 4</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Correo institucional</h4>
+          <p>atencionciudadano@invias.gov.co</p>
+
+          <h4>Notificaciones judiciales</h4>
+          <p>njjudiciales@invias.gov.co</p>
+
+          <h4>Impedimentos y recusaciones</h4>
+          <p>impedimentosyrecusaciones@invias.gov.co</p>
+
+          <h4>Buzón de transparencia</h4>
+          <p>Línea Ética PAS</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horario de atención al ciudadano</h4>
+          <p>Lunes a viernes</p>
+          <p>8:00 a.m. – 4:30 p.m.</p>
+
+          <h4>Direcciones Territoriales</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/scripts/nav--hide-on-scroll.js"></script>
+
+  <script src="/scripts/roadmap.js"></script>
+  <script src="/scripts/fauna-stats.js"></script>
+  <script src="/scripts/aliados-carousel.js"></script>
+  <script src="/scripts/project-slider.js"></script>
+  <script src="/scripts/fauna-slider.js"></script>
+  <script src="/scripts/menu.js"></script>
+
+</body>
+
+</html>
